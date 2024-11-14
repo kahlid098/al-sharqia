@@ -1117,7 +1117,9 @@ ul.cart-list>li.total {
         height: 100px;
     }
 }
-
+.mond{
+    display: flex;
+}
 .mar {
     margin-top: 180px;
 }
@@ -1696,7 +1698,7 @@ span.feature-review {
 .social-twiter {
     width: 40px;
     height: 40px;
-    background: #1da1f2;
+    background: #000000;
     display: block;
     align-content: center;
     text-align: center;
