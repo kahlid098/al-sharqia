@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #000;
+    }
+
+    .gallery {
+      width: 900px;
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .gallery div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+      padding: 10px;
+      flex: none;
+    }
+
+    .gallery div img {
+      width: 100%;
+    }
+
+    .gallery::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10% auto;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .gallery {
+        width: 100%;
+      }
+
+      .gallery div {
+        grid-template-columns: 1fr; /* Only 1 item per row */
+      }
+
+      .gallery-wrap {
+        margin: 5% auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gallery-wrap">
+    <button id="backbtn">prev</button>
+    <div class="gallery">
+      <div>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+      </div>
+      <div>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
+      </div>
+    </div>
+    <button id="nextbtn" class="nextbrn">next</button>
+  </div>
+
+  <script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backbtn = document.getElementById("backbtn");
+    let nextbtn = document.getElementById("nextbtn");
+
+    // Get the width of a single slide (div)
+    const slideWidth = scrollContainer.querySelector('div').offsetWidth;
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaX;
+    });
+
+    nextbtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += slideWidth;
+    });
+
+    backbtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= slideWidth;
+    });
+  </script>
+</body>
+
+</html>
