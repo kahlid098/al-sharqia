@@ -177,6 +177,7 @@ nav.navbar.bootsnav {
 
 .input-feild {
     width: 100%;
+    resize: vertical;
 }
 
 .new-btn {
