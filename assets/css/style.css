@@ -1093,14 +1093,14 @@ ul.cart-list>li.total {
         padding: 14px;
         border: 1px solid #ddd;
         z-index: 1000;
-        width: 292px;
+        width: 350px;
     }
 
     .needs {
-        margin-bottom: 16px;
+        margin-bottom: 25px;
         color: #e99c2e;
-        font-size: 16px;
-        margin-top: 17px;
+        font-size: 19px;
+        margin-top: 21px;
         text-align: center;
     }
 
@@ -1109,6 +1109,7 @@ ul.cart-list>li.total {
         height: 0px;
         padding: 14px 6px;
         color: #000;
+        resize: vertical;
     }
 
 
