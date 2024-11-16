@@ -214,6 +214,17 @@ nav.navbar.bootsnav {
     transition: opacity 0.3s ease, transform 0.3s ease;
     border: none !important;
 }
+.highlight{
+    color: #e99c2e;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    border-left: 4px solid #e99c2e;
+    padding: 2px 6px;
+    font-size: 14px;
+    line-height: 1.4;
+}
 
 .dropdown-menu12 li {
     list-style: none;
@@ -1029,6 +1040,17 @@ ul.cart-list>li.total {
     .flaex-box {
         display: block !important;
     }
+    .highlight {
+        color: #e99c2e;
+        background-color: #f9f9f9;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+        border-left: 4px solid #e99c2e;
+        padding: 2px 6px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
 }
 
 .flex-wrsap2 {
@@ -1232,7 +1254,7 @@ p.arrival-review span {
     color: #5f5b57;
     font-size: 16px;
     font-weight: 500;
-    margin: 26px 0 12px;
+    margin: 10px 0 4px;
 }
 
 .arrival-product-price {
