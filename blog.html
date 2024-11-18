@@ -447,12 +447,14 @@
       font-size: 12px;
     }
   }
-  .iamge-fit{
+
+  .iamge-fit {
     min-height: 322px;
     background-size: cover;
     object-fit: fill;
   }
-  .imag-section{
+
+  .imag-section {
     width: 100%;
     height: 286px;
     background-image: url(./assets/banner/bedroom_banner.jpg);
@@ -465,65 +467,262 @@
     object-position: 16px 15px;
     position: relative;
   }
-  .ward{
+
+  .ward {
     font-size: 60px !important;
     color: #fff;
     background: rgb(0 0 0 / 23%);
     padding: 110px 0px;
   }
-  @media only screen and (max-width: 600px) {
-    .iamge-fit {
-    min-height: 247px;
-    background-size: cover;
-    object-fit: fill;
-}
-        .imag-section {
-            width: 100%;
-            height: 184px !important;
-            background-image: url(./assets/banner/bedroom_banner.jpg);
-            align-content: center;
-            text-align: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: contain;
-            object-position: 16px 15px;
-            position: relative;
-        }
+</style>
 
-        .ward {
-            font-size: 60px !important;
-            color: #fff;
-            background: rgb(0 0 0 / 23%);
-            padding: 78px 0px !important;
-        }
+<style>
+  .flex {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+  }
+
+  .left-item {
+    width: 40%;
+    border: 1px solid #ccc;
+    padding: 18px 14px;
+    box-shadow: 0px 1px 4px 0px;
+    border-radius: 5px;
+    height: 193px;
+  }
+
+  .right-item {
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 0px 14px;
+    box-shadow: 0px 1px 4px 0px;
+    border-radius: 5px;
+  }
+
+  .input-group {
+    display: contents;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 6px 8px;
+    outline: none;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .input-group textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btni {
+    width: 100%;
+    background: #e99c2e;
+    padding: 12px 0px;
+    margin-top: 11px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .newlabel {
+    font-size: 15px;
+    margin-top: 24px;
+  }
+
+  .listing {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    padding: 6px 7px;
+    border-radius: 5px;
+    align-items: baseline;
+  }
+
+  .conatct {
+    font-size: 20px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+  }
+
+  .get {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .flex {
+      display: block;
     }
+
+    .left-item {
+      width: 100%;
+    }
+
+    .right-item {
+      width: 100%;
+      margin: inherit;
+    }
+
+    .imag-section {
+      width: 100%;
+      height: 184px !important;
+      background-image: url(./assets/banner/bedroom_banner.jpg);
+      align-content: center;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: contain;
+      object-position: 16px 15px;
+      position: relative;
+    }
+
+    .ward {
+      font-size: 60px !important;
+      color: #fff;
+      background: rgb(0 0 0 / 23%);
+      padding: 78px 0px !important;
+    }
+  }
+
+  .imag-section {
+    width: 100%;
+    height: 286px;
+    background-image: url(./assets/banner/bedroom_banner.jpg);
+    align-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    /* object-position: 9px; */
+    object-position: 16px 15px;
+    position: relative;
+  }
+
+  .ward {
+    font-size: 60px !important;
+    color: #fff;
+    background: rgb(0 0 0 / 23%);
+    padding: 110px 0px;
+  }
+</style>
+
+<style>
+  .blog-card {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 40px auto;
+    align-items: center;
+  }
+
+  .blog-content1 {
+    padding: 20px;
+    flex: 1;
+
+  }
+
+  .new-card {
+    order: 2;
+    padding-left: 40px;
+
+  }
+
+  .blog-meta {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .blog-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .blog-author {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .blog-author a {
+    color: #e99c2e;
+    text-decoration: none;
+  }
+
+  .blog-author a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .btn-read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e99c2e;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-read-more:hover {
+    background-color: #c98222;
+  }
+
+  .blog-image {
+    flex: 1;
+    width: 50%;
+    height: 436px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .blog-card {
+        flex-direction: column-reverse;
+    }
+    .new-card {
+    order: 0 !important;
+    padding-left: 40px;
+}
+    .blog-image {
+    flex: 1;
+    width: 100%;
+    height: 300px;
+  }
+  .blog-content1 {
+    padding: 0 0 14px 0px;
+    flex: 1;
+}
+  }
 </style>
 
 <body>
 
-  <!--welcome-hero start -->
-  <div id="inquiryFormModal" class="main-form">
-    <h3 class="needs">Contact Us for Your Furniture Needs</h3>
-    <form>
-      <label class="label-main" for="name">Name:</label><br />
-      <input class="input-feild" type="text" id="name" name="name" required /><br /><br />
 
-      <label class="label-main" for="email">Email:</label><br />
-      <input class="input-feild" type="email" id="email" name="email" required /><br /><br />
-
-      <label class="label-main" for="mobile">Mobile No:</label><br />
-      <input class="input-feild" type="tel" id="mobile" name="mobile" required /><br /><br />
-
-      <label class="label-main" for="message">Message:</label><br />
-      <textarea class="input-feild message-field" id="message" name="message" rows="4" required></textarea><br /><br />
-
-      <button type="submit" class="new-btn">Submit</button>
-      <!-- Close Button inside Modal -->
-      <button type="button" onclick="closeInquiryForm()" class="close-btn">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </form>
-  </div>
 
   <header id="home" class="welcome-hero">
 
@@ -570,14 +769,14 @@
                 <li class="active"><a href="/index.html#index">home</a></li>
 
                 <li class="dropdown1">
-                    <a href="#" class="maib">Product</a>
-                    <ul class="dropdown-menu12">
-                      <li><a href="/bedroom.html#bedroom">Bed Room</a></li>
-                      <li><a href="/wardrop.html#wardrop">Elegant Wardrobes</a></li>
-                      <li><a href="/sofa.html#sofa">Luxury Sofas</a></li>
-                      <li><a href="/dressing-table.html#dressing-table">Dressing Tables</a></li>
-                    </ul>
-                  </li>
+                  <a href="#" class="maib">Product</a>
+                  <ul class="dropdown-menu12">
+                    <li><a href="/bedroom.html#bedroom">Bed Room</a></li>
+                    <li><a href="/wardrop.html#wardrop">Elegant Wardrobes</a></li>
+                    <li><a href="/sofa.html#sofa">Luxury Sofas</a></li>
+                    <li><a href="/dressing-table.html#dressing-table">Dressing Tables</a></li>
+                  </ul>
+                </li>
 
 
                 <li class="scroll"><a href="#">features</a></li>
@@ -601,351 +800,73 @@
     </div>
 
   </header>
-  
-  <div class="section-header imag-section">
-    <h2 class="ward">Bed & Side Table</h2>
-  </div>
-  <section id="new-arrivals" class="new-arrivals mon-padding">
-    <div class="container">
-      <!--/.section-header-->
-      <div class="new-arrivals-content">
-        <div class="row">
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-1.jpeg" alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Elegant Sheesham Wood Wardrobes, Built to Last</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-          <div class="overlay-img">
-            <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-          </div>
-          <div class="main-overlay"></div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-2.jpeg" alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Timeless Wardrobes Crafted from Solid Sheesham Wood</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-3.jpeg" alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Durable Sheesham Wood Wardrobes for Stylish Storage</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-4.jpeg" alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Handcrafted Wooden Beds for a Luxurious Sleep</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-5.jpeg" alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Elegant and Durable Beds, Perfect for Your Bedroom</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-6.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Elegant Vanity Tables for a Stylish Makeup Space</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-7.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Stylish Vanity Tables for Your Beauty Essentials</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-8.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Premium Solid Wood Beds for Ultimate Comfort</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
 
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-9.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Sleek and Functional Vanity Tables for Every Room</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-10.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-12.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-          
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image" src="assets/bedroom/bedroom-13.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-14.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-15.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-16.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-17.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 msnub">
-            <div class="single-new-arrival">
-              <div class="single-new-arrival-bg">
-                <img class="all-product-image iamge-fit" src="assets/bedroom/bedroom-3.jpeg"
-                  alt="new-arrivals images" />
-              </div>
-              <h4><a href="#">Bed</a></h4>
-              <p class="moso">Custom-Made Wardrobes to Suit Your Storage Needs</p>
-              <p class="highlight">Custom made Design for you, we will implement it</p>
-              <span class="neaspan"> SAR 2750 </span> <span class="arrival-product-price">SAR 243.75</span>
-              <span><a href="#" style="font-size: 12px;"><i class="fa-brands fa-whatsapp"
-                    style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
-                onclick="openInquiryForm()">Enquire Now</button>
-            </div>
-            <div class="overlay-img">
-              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-            </div>
-          </div>
-
+  <div class="container">
+    <div class="blog-card">
+      <div class="blog-content1">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
+          <span><i class="fas fa-comments"></i> 3 comments</span>
         </div>
-        <!--/.container-->
-  </section>
+        <h2 class="blog-title">Elegant Sofas: The Perfect Blend of Style and Comfort</h2>
+        <p class="blog-author">
+          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
+        </p>
+        <p class="blog-description">
+          Discover our premium sofa collection, designed to bring comfort and class to your living space.
+          With customizable fabrics and colors, Allmira’s sofas fit seamlessly into both modern and classic interiors.
+        </p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <div class="blog-image">
+        <img src="./assets/sofa/sofa-1.jpeg" alt="Blog Image">
+      </div>
+    </div>
 
+    <div class="blog-card">
+      <div class="blog-content1 new-card">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
+          <span><i class="fas fa-comments"></i> 3 comments</span>
+        </div>
+        <h2 class="blog-title">Luxury Beds: Redefine Comfort & Elegance</h2>
+        <p class="blog-author">
+          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
+        </p>
+        <p class="blog-description">
+          Experience unparalleled comfort with Allmira's premium beds crafted from solid Sheesham wood.
+          Perfectly designed to blend elegance and durability, our collection offers bespoke styles
+          that cater to modern and traditional aesthetics alike.
+        </p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <div class="blog-image">
+        <img src="./assets/bedroom/bedroom-16.jpeg" alt="Blog Image">
+      </div>
+    </div>
 
-
-
- 
-
-
-
- 
-
-
-
-
-
-
-
-  <!-- Testomoonial -->
-
-
-
-  <!-- Testomoonial end -->
+    <div class="blog-card">
+      <div class="blog-content1">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
+          <span><i class="fas fa-comments"></i> 3 comments</span>
+        </div>
+        <h2 class="blog-title">How to Choose the right Color Palette <br /> for Home</h2>
+        <p class="blog-author">
+          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
+        </p>
+        <p class="blog-description">
+          Discover how Allmira's carefully crafted Sheesham wood pieces can redefine the
+          aesthetics of your living space. Whether it’s a sleek dining table or a custom wardrobe,
+          we bring innovation, elegance, and durability to every design.
+        </p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <div class="blog-image">
+        <img src="./assets/wardrop/wardrop-24.jpeg" alt="Blog Image">
+      </div>
+    </div>
+  </div>
 
   <!--newsletter strat -->
   <section id="newsletter" class="newsletter" style="margin-top: 20px;">
@@ -1155,18 +1076,18 @@
   </script>
 
 
-<script>
-// Mobile dropdown toggle for Products
-const dropdownToggle = document.querySelector('.dropdown1 > a');
-const dropdownMenu = document.querySelector('.dropdown-menu12');
+  <script>
+    // Mobile dropdown toggle for Products
+    const dropdownToggle = document.querySelector('.dropdown1 > a');
+    const dropdownMenu = document.querySelector('.dropdown-menu12');
 
-dropdownToggle.addEventListener('click', (e) => {
-  e.preventDefault(); // Prevent default link behavior
-  dropdownMenu.classList.toggle('show'); // Toggle visibility of dropdown menu
-});
+    dropdownToggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default link behavior
+      dropdownMenu.classList.toggle('show'); // Toggle visibility of dropdown menu
+    });
 
 
-</script>
+  </script>
 
 
 

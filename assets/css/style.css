@@ -855,7 +855,6 @@ ul.cart-list>li.total {
     position: absolute;
     top: 211px;
     right: 21px;
-    z-index: 99999;
 }
 .overlay-img-category {
     position: absolute;
@@ -1780,7 +1779,6 @@ span.feature-review {
         position: absolute;
         top: 150px;
         right: 9px;
-        z-index: 99999;
     }
     .overlay-img-category img {
         width: 85px;
@@ -1790,7 +1788,6 @@ span.feature-review {
             position: absolute;
             top: 170px;
             right: 10px;
-            z-index: 99999;
         }
     .overlay-img img {
         width: 90px;
