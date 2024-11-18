@@ -447,6 +447,11 @@
       font-size: 12px;
     }
   }
+
+  .curder {
+    cursor: pointer;
+    display: block !important;
+  }
 </style>
 
 <body>
@@ -532,7 +537,7 @@
 
                 <li class="scroll"><a href="#">features</a></li>
                 <li class="scroll"><a href="#">blog</a></li>
-                <li class="scroll"><a href="#">contact</a></li>
+                <li><a href="/contact.html#contact">contact</a></li>
                 <li class="my-mobb">
                   <span><i class="fa-solid fa-globe"></i></span><span><a href="#">عربي</a></span>
                 </li>
@@ -585,9 +590,10 @@
         <div class="col-md-3 col-sm-4 msnub">
           <div class="mainshop">
             <div class="">
-              <img class="all-product-image" src="assets/product/sofa-2.jpeg" alt="new-arrivals images" />
+              <a class="curder" href="/sofa.html#sofa"> <img class="all-product-image" src="assets/product/sofa-2.jpeg"
+                  alt="new-arrivals images" /></a>
             </div>
-            <h4 class="heds"> <a href="/sofa.html#sofa">Luxury Sofas</a></h4>
+            <h4 class="heds"> <a class="curder" href="/sofa.html#sofa">Luxury Sofas</a></h4>
           </div>
           <div class="overlay-img-category">
             <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
@@ -597,9 +603,10 @@
         <div class="col-md-3 col-sm-4 msnub">
           <div class="mainshop">
             <div class="">
-              <img class="all-product-image" src="assets/product/cat-allmira.jpeg" alt="new-arrivals images" />
+              <a class="curder" href="/wardrop.html#wardrop"> <img class="all-product-image"
+                  src="assets/product/cat-allmira.jpeg" alt="new-arrivals images" /></a>
             </div>
-            <h4 class="heds"><a href="/wardrop.html#wardrop">Elegant Wardrobes</a></h4>
+            <h4 class="heds"><a class="curder" href="/wardrop.html#wardrop">Elegant Wardrobes</a></h4>
           </div>
           <div class="overlay-img-category">
             <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
@@ -608,10 +615,11 @@
 
         <div class="col-md-3 col-sm-4 msnub">
           <div class="mainshop">
-            <div >
-               <img class="all-product-image" src="assets/product/bed-3.jpeg" alt="new-arrivals images" />
+            <div>
+              <a class="curder" href="/bedroom.html#bedroom"> <img class="all-product-image"
+                  src="assets/product/bed-3.jpeg" alt="new-arrivals images" /></a>
             </div>
-            <h4 class="heds"><a href="/bedroom.html#bedroom">Comfortable Beds</a></h4>
+            <h4 class="heds"><a class="curder" href="/bedroom.html#bedroom">Comfortable Beds</a></h4>
           </div>
           <div class="overlay-img-category">
             <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
@@ -621,9 +629,11 @@
         <div class="col-md-3 col-sm-4 msnub">
           <div class="mainshop">
             <div class="">
-              <img class="all-product-image" src="assets/product/dressing.jpeg" alt="new-arrivals images" />
+              <a class="curder" href="/dressing-table.html#dressing-table"> <img class="all-product-image"
+                  src="assets/product/dressing.jpeg" alt="new-arrivals images" /></a>
             </div>
-            <h4 class="heds"> <a href="/dressing-table.html#dressing-table">Dressing Tables & Mirrors</a></h4>
+            <h4 class="heds"> <a class="curder" href="/dressing-table.html#dressing-table">Dressing Tables & Mirrors</a>
+            </h4>
           </div>
           <div class="overlay-img-category">
             <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
@@ -657,10 +667,10 @@
                     style="margin-right: 5px;"></i></i>+966 55 249 8575</a></span><button class="new-btn1"
                 onclick="openInquiryForm()">Enquire Now</button>
             </div>
-          <div class="overlay-img">
-            <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
-          </div>
-          <div class="main-overlay"></div>
+            <div class="overlay-img">
+              <img src="./assets/img/Gold Luxury Initial Circle Logo (3).png" alt="">
+            </div>
+            <div class="main-overlay"></div>
           </div>
           <div class="col-md-3 col-sm-4 msnub">
             <div class="single-new-arrival">
@@ -1236,18 +1246,18 @@
   </script>
 
 
-<script>
-// Mobile dropdown toggle for Products
-const dropdownToggle = document.querySelector('.dropdown1 > a');
-const dropdownMenu = document.querySelector('.dropdown-menu12');
+  <script>
+    // Mobile dropdown toggle for Products
+    const dropdownToggle = document.querySelector('.dropdown1 > a');
+    const dropdownMenu = document.querySelector('.dropdown-menu12');
 
-dropdownToggle.addEventListener('click', (e) => {
-  e.preventDefault(); // Prevent default link behavior
-  dropdownMenu.classList.toggle('show'); // Toggle visibility of dropdown menu
-});
+    dropdownToggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default link behavior
+      dropdownMenu.classList.toggle('show'); // Toggle visibility of dropdown menu
+    });
 
 
-</script>
+  </script>
 
 
 

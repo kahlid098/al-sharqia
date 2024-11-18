@@ -447,6 +447,49 @@
             font-size: 12px;
         }
     }
+
+    .imag-section {
+        width: 100%;
+        height: 286px;
+        background-image: url(./assets/banner/bedroom_banner.jpg);
+        align-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: contain;
+        /* object-position: 9px; */
+        object-position: 16px 15px;
+        position: relative;
+    }
+
+    .ward {
+        font-size: 60px !important;
+        color: #fff;
+        background: rgb(0 0 0 / 23%);
+        padding: 110px 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .imag-section {
+            width: 100%;
+            height: 184px !important;
+            background-image: url(./assets/banner/bedroom_banner.jpg);
+            align-content: center;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+            object-position: 16px 15px;
+            position: relative;
+        }
+
+        .ward {
+            font-size: 60px !important;
+            color: #fff;
+            background: rgb(0 0 0 / 23%);
+            padding: 78px 0px !important;
+        }
+    }
 </style>
 
 <body>
@@ -535,7 +578,7 @@
 
                                 <li class="scroll"><a href="#">features</a></li>
                                 <li class="scroll"><a href="#">blog</a></li>
-                                <li class="scroll"><a href="#">contact</a></li>
+                                <li><a href="/contact.html#contact">contact</a></li>
                                 <li class="my-mobb">
                                     <span><i class="fa-solid fa-globe"></i></span><span><a href="#">عربي</a></span>
                                 </li>
@@ -555,12 +598,11 @@
 
     </header>
 
-
-    <section id="new-arrivals" class="new-arrivals">
+    <div class="section-header imag-section">
+        <h2 class="ward">Dressing Tables & Mirrors</h2>
+    </div>
+    <section id="new-arrivals" class="new-arrivals mon-padding">
         <div class="container">
-            <div class="section-header">
-                <h2>Dressing Tables & Mirrors</h2>
-            </div>
             <!--/.section-header-->
             <div class="new-arrivals-content">
                 <div class="row">
