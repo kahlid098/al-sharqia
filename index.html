@@ -520,7 +520,7 @@
                 <li class="scroll active"><a href="#home">home</a></li>
 
                 <li class="dropdown1">
-                  <a href="#">Product</a>
+                  <a href="#" class="maib">Product</a>
                   <ul class="dropdown-menu12">
                     <li><a href="#product1">Bed Room</a></li>
                     <li><a href="#product2">Living Room</a></li>
@@ -1235,6 +1235,18 @@
   </script>
 
 
+<script>
+// Mobile dropdown toggle for Products
+const dropdownToggle = document.querySelector('.dropdown1 > a');
+const dropdownMenu = document.querySelector('.dropdown-menu12');
+
+dropdownToggle.addEventListener('click', (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  dropdownMenu.classList.toggle('show'); // Toggle visibility of dropdown menu
+});
+
+
+</script>
 
 
 
