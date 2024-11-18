@@ -856,6 +856,16 @@ ul.cart-list>li.total {
     right: 21px;
     z-index: 99999;
 }
+.overlay-img-category {
+    position: absolute;
+    top: 120px;
+    right: 21px;
+    z-index: 99999;
+}
+
+.overlay-img-category img {
+    width: 120px;
+}
 /* .main-overlay{
     position: absolute;
     top: 10px;

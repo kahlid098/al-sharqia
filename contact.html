@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Responsive Dropdown Accordion</title>
   <style>
+    /* Base Styles */
     body {
-      background: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
-    .gallery {
-      width: 900px;
-      display: flex;
-      overflow-x: scroll;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .gallery div {
-      width: 100%;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-gap: 20px;
-      padding: 10px;
-      flex: none;
+    li {
+      position: relative;
     }
 
-    .gallery div img {
-      width: 100%;
+    .dropdown1 a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 10px 15px;
+      display: block;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin: 5px 0;
+      border-radius: 5px;
     }
 
-    .gallery::-webkit-scrollbar {
-      display: none;
+    .dropdown-menu12 {
+      display: none; /* Hide by default */
+      position: static; /* Remove absolute for accordion */
+      padding: 0;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
     }
 
-    .gallery-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 10% auto;
+    .dropdown-menu12 li a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      color: #333;
     }
 
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .gallery {
-        width: 100%;
-      }
+    .dropdown-menu12 li a:hover {
+      background-color: #e99c2e; /* Highlight color */
+      color: white;
+    }
 
-      .gallery div {
-        grid-template-columns: 1fr; /* Only 1 item per row */
-      }
+    /* Open class for responsive accordion */
+    .open .dropdown-menu12 {
+      display: block;
+    }
 
-      .gallery-wrap {
-        margin: 5% auto;
-      }
+    /* Transition Effect */
+    .dropdown-menu12 {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .open .dropdown-menu12 {
+      max-height: 300px; /* Adjust as needed */
     }
   </style>
 </head>
-
 <body>
-  <div class="gallery-wrap">
-    <button id="backbtn">prev</button>
-    <div class="gallery">
-      <div>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-      </div>
-      <div>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-        <span><img src="./assets/product/allmira-1.jpeg" alt=""></span>
-      </div>
-    </div>
-    <button id="nextbtn" class="nextbrn">next</button>
-  </div>
-
-  <h1>Furniture that Defines Your Style</h1>
-  <p>Elevate Your Living: Where Modern Meets Comfort and Style!</p>
+  <ul>
+    <li class="dropdown1">
+      <a href="#" class="dropdown-toggle">Product</a>
+      <ul class="dropdown-menu12">
+        <li><a href="#product1">Bed Room</a></li>
+        <li><a href="#product2">Living Room</a></li>
+        <li><a href="#product3">Chair</a></li>
+      </ul>
+    </li>
+  </ul>
 
   <script>
-    let scrollContainer = document.querySelector(".gallery");
-    let backbtn = document.getElementById("backbtn");
-    let nextbtn = document.getElementById("nextbtn");
+    // Select all dropdown toggles
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const parent = this.parentElement;
 
-    // Get the width of a single slide (div)
-    const slideWidth = scrollContainer.querySelector('div').offsetWidth;
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown1').forEach(dropdown => {
+          if (dropdown !== parent) {
+            dropdown.classList.remove('open');
+          }
+        });
 
-    scrollContainer.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaX;
-    });
-
-    nextbtn.addEventListener("click", () => {
-      scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft += slideWidth;
-    });
-
-    backbtn.addEventListener("click", () => {
-      scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft -= slideWidth;
+        // Toggle current dropdown
+        parent.classList.toggle('open');
+      });
     });
   </script>
 </body>
-
 </html>
