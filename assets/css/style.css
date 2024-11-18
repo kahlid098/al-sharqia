@@ -278,6 +278,7 @@ nav.navbar.bootsnav ul.nav>li>a {
 
 nav.navbar.bootsnav ul.nav>li>a {
     padding: 57px 25px;
+    cursor: pointer;
 }
 
 nav.navbar.bootsnav ul.nav>li>a:hover,
@@ -1213,6 +1214,7 @@ ul.cart-list>li.total {
     margin-top: 15px !important;
     display: flex;
     align-items: center !important;
+    float: right;
 }
 
 
