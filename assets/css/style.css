@@ -1763,9 +1763,19 @@ span.feature-review {
         left: 12px;
         right: 0;
     } */
+    .overlay-img-category {
+        position: absolute;
+        top: 150px;
+        right: 9px;
+        z-index: 99999;
+    }
+    .overlay-img-category img {
+        width: 85px;
+    }
+
         .overlay-img {
             position: absolute;
-            top: 166px;
+            top: 170px;
             right: 10px;
             z-index: 99999;
         }
