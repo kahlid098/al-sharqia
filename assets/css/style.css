@@ -850,42 +850,24 @@ ul.cart-list>li.total {
     overflow: hidden;
 }
 
-.single-new-arrival-bg img {
-    width: auto;
-    height: auto;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-}
-
-.single-new-arrival-bg-overlay {
+.overlay-img{
     position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(106, 119, 129, .1);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
+    top: 211px;
+    right: 21px;
+    z-index: 99999;
 }
-
-.single-new-arrival-bg:hover .single-new-arrival-bg-overlay {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+.main-overlay{
+    position: absolute;
+    top: 10px;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 11%), rgb(0 0 0 / 14%));
+    width: 241px;
+    z-index: 9999;
+    min-height: 323px;
+    left: 26px;
+    right: 0;
+} 
+.overlay-img img{
+    width: 120px;
 }
 
 .sale {
@@ -1771,6 +1753,25 @@ span.feature-review {
 }
 
 @media only screen and (max-width: 768px) {
+    .main-overlay {
+        position: absolute;
+        top: 11px;
+        background: linear-gradient(to bottom, rgb(0 0 0 / 11%), rgb(0 0 0 / 14%));
+        width: 171px;
+        z-index: 9999;
+        min-height: 230px;
+        left: 12px;
+        right: 0;
+    }
+    .overlay-img {
+        position: absolute;
+        top: 153px;
+        right: 8px;
+        z-index: 99999;
+    }
+    .overlay-img img {
+        width: 90px;
+    }
 
     /* Reversing the order of text and image on small screens */
     .col-sm-7 {
