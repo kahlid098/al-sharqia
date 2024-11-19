@@ -173,6 +173,7 @@ nav.navbar.bootsnav {
 
 .logo-image {
     width: 150px;
+    filter: drop-shadow(4px 4px 3px #ccc) !important;
 }
 
 .input-feild {
@@ -1826,6 +1827,7 @@ span.feature-review {
         max-width: 80px;
         height: auto;
         margin-bottom: 0px !important;
+        filter: drop-shadow(4px 4px 3px #ccc);
     }
 
     .language-color {
