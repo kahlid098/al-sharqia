@@ -610,73 +610,120 @@
   .ward {
     font-size: 60px !important;
     color: #fff;
-    background: rgb(0 0 0 / 23%);
+    background: rgb(0 0 0 / 34%);
     padding: 110px 0px;
   }
 </style>
 
-<style>
-    body {
-      line-height: 1.6;
-      background-color: #f9f9f9;
-    }
-    .hero {
-      background: url('luxury-furniture.jpg') no-repeat center center/cover;
-      color: white;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    .section {
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
-      margin-top: 40px;
-    }
-    .section h2 {
-      margin-bottom: 15px;
-      font-size: 2rem;
-      color: #e99c2e;
-    }
-    .section p {
-      font-size: 14px;
-      line-height: 1.8;
-      color: #333333;
-    }
-    .section ul {
-      margin: 20px 0;
-      padding: 0;
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    .section ul li {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #333333;
-    }
-    .cta {
-      text-align: center;
-      padding: 20px;
-    }
-    .cta a {
-      text-decoration: none;
-      padding: 12px 30px;
-      background: #e99c2e;
-      color: white;
-      border-radius: 5px;
-      font-size: 1.2rem;
-    }
-  </style>
 
+  <style>
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+
+
+.about-section, .values-section, .offer-section {
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.about-section h2, 
+.values-section h2, 
+.offer-section h2 {
+  color: #e99c2e;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 14px;
+  color: #555;
+}
+
+.values {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value-card {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 353px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.value-card h3 {
+    font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.value-card p {
+    font-size: 14px;
+  color: #555;
+}
+
+.offer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-section ul li {
+    font-size: 14px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #555;
+}
+
+.offer-section ul li::before {
+  content: "✔";
+  color: #e99c2e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.icon-container {
+    font-size: 50px; 
+    margin-bottom: 5px; 
+    color: #e99c2e; 
+}
+@media only screen and (max-width: 768px){
+    .about-section, .values-section, .offer-section {
+    margin: 40px auto;
+    padding: 20px 8px;
+    background: #fff;
+}
+}
+  </style>
 <body>
 
 
@@ -759,36 +806,72 @@
     <h2 class="ward">About Us</h2>
 </div>
 
-  <div class="section">
+
+
+  <div class="container">
+  <section class="about-section">
     <h2>Who We Are</h2>
     <p>
-      **Al Sharqia** is not just a furniture brand; it is a symbol of timeless elegance, exceptional craftsmanship, and innovative design. We are here to transform your living spaces into a blend of beauty and functionality. From the initial design concept to the final piece, every step is infused with passion and precision.
-    </p>
-    <p>
-      Our journey began with a vision: to create luxury furniture that speaks to the heart of every home. Today, **Al Sharqia** has evolved into a leader in the furniture industry, serving clients from all walks of life and creating stunning interiors that bring people closer to their dream spaces.
-    </p>
-  </div>
+        At <strong>Elegant Furniture</strong>, we believe that your home is more than just a place to live—it’s a reflection of your personality, style, and aspirations.
+      </p>
+      
+      <p><strong>Our Journey:</strong> Established over a decade ago, our journey began with a simple goal: to redefine the way people think about furniture by combining timeless craftsmanship with modern innovation.</p>
+      
+      <p><strong>Our Craftsmanship:</strong> Every piece we create is a testament to our passion for design, functionality, and quality.</p>
+      
+      <p><strong>Product Range:</strong> From luxurious living room sets to ergonomic office furniture, we take pride in offering products that suit every taste and budget.</p>
+      
+      <p><strong>Our Team:</strong> Our dedicated team of designers and artisans work tirelessly to bring your vision to life, ensuring that each item not only complements your space but also enhances your lifestyle.</p>
+      
+      <p><strong>Sustainability:</strong> We are committed to using sustainable materials and eco-friendly practices to create furniture that is not only beautiful but also responsible.</p>
+      
+      <p><strong>Our Approach:</strong> At Elegant Furniture, we believe in more than just selling furniture; we believe in creating experiences.</p>
+      
+      <p><strong>Customer Experience:</strong> With a customer-centric approach, we aim to make your furniture-buying journey seamless and enjoyable, whether you’re shopping online or visiting our showroom.</p>
+      
+      <p><strong>Our Promise:</strong> Let us help you transform your house into a home where comfort, elegance, and memories come together.</p>
+      
+  </section>
 
-  <div class="section">
+  <section class="values-section">
     <h2>Our Vision</h2>
-    <p>
-      Our vision at **Al Sharqia** is to set the benchmark for luxury, innovation, and sustainability in the furniture industry. We aspire to create pieces that not only elevate your home but also tell a unique story of craftsmanship, style, and legacy.
-    </p>
-  </div>
+    <div class="values">
+      <div class="value-card">
+        <div class="icon-container">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <h3> Quality First</h3>
+        <p>We prioritize premium materials and expert craftsmanship, ensuring that each piece of furniture is durable, stylish, and meets the highest standards of quality for long-lasting satisfaction.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-container">
+            <i class="fas fa-smile"></i> <!-- Icon representing customer satisfaction -->
+        </div>
+        <h3>Customer Satisfaction</h3>
+        <p>Your happiness is our top priority. From the initial design to final delivery, we ensure an exceptional experience, aiming for complete satisfaction every step of the way.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-container">
+            <i class="fas fa-leaf"></i> <!-- Icon representing sustainability -->
+        </div>
+        <h3>Sustainability</h3>
+        <p>We are dedicated to environmentally responsible practices, using sustainable materials and eco-friendly processes to create furniture that benefits both your home and the planet.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>Why Choose Al Sharqia?</h2>
-    <p>
-      We believe in offering more than just furniture; we offer a piece of art that complements your lifestyle. Here's why **Al Sharqia** stands out:
-    </p>
+  <section class="offer-section">
+    <h2>What We Offer</h2>
     <ul>
-      <li>**Exquisite Designs:** From classic to contemporary, our designs are tailored to suit every aesthetic.</li>
-      <li>**Sustainability at Heart:** We use sustainable materials that are eco-friendly and durable.</li>
-      <li>**Craftsmanship:** Each piece is handcrafted by skilled artisans, ensuring the highest quality.</li>
-      <li>**Custom Creations:** We understand that every home is unique, which is why we offer customizable solutions.</li>
+      <li>Living Room Furniture: Sofas, coffee tables, TV units, and more.</li>
+      <li>Bedroom Collections: Luxurious beds, wardrobes, and nightstands.</li>
+      <li>Dining Solutions: Elegant dining tables and chairs.</li>
+      <li>Office Furniture: Functional desks and ergonomic chairs.</li>
+      <li>Custom Furniture: Tailor-made designs to suit your needs.</li>
     </ul>
-  </div>
+  </section>
 
+</div>
   <!--newsletter strat -->
   <section id="newsletter" class="newsletter" style="margin-top: 20px;">
     <div class="container">
