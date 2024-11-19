@@ -1766,16 +1766,14 @@ span.feature-review {
 }
 
 @media only screen and (max-width: 768px) {
-    /* .main-overlay {
-        position: absolute;
-        top: 11px;
-        background: linear-gradient(to bottom, rgb(0 0 0 / 11%), rgb(0 0 0 / 14%));
-        width: 171px;
-        z-index: 9999;
-        min-height: 230px;
-        left: 12px;
-        right: 0;
-    } */
+    .section {
+        padding: 20px !important;
+        max-width: 1200px;
+        margin: auto;
+        background: white;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
     .overlay-img-category {
         position: absolute;
         top: 150px;
