@@ -616,106 +616,66 @@
 </style>
 
 <style>
-  .blog-card {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    margin: 40px auto;
-    align-items: center;
-  }
-
-  .blog-content1 {
-    padding: 20px;
-    flex: 1;
-
-  }
-
-  .new-card {
-    order: 2;
-    padding-left: 40px;
-
-  }
-
-  .blog-meta {
-    display: flex;
-    gap: 40px;
-    font-size: 15px;
-    color: #888;
-    margin-bottom: 10px;
-    align-items: center;
-  }
-
-  .blog-title {
-    font-size: 23px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-
-  .blog-author {
-    font-size: 15px;
-    margin-bottom: 15px;
-    color: #555;
-  }
-
-  .blog-author a {
-    color: #e99c2e;
-    text-decoration: none;
-  }
-
-  .blog-author a:hover {
-    text-decoration: underline;
-  }
-
-  .blog-description {
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-
-  .btn-read {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #e99c2e;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-
-  .blog-image {
-    flex: 1;
-    width: 50%;
-    height: 436px;
-    background-size: cover;
-    object-fit: cover;
-  }
-
-  .blog-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .blog-card {
-        flex-direction: column-reverse;
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
     }
-    .new-card {
-    order: 0 !important;
-    padding-left: 40px;
-}
-    .blog-image {
-    flex: 1;
-    width: 100%;
-    height: 300px;
-  }
-  .blog-content1 {
-    padding: 0 0 14px 0px;
-    flex: 1;
-}
-  }
-</style>
+    .hero {
+      background: url('luxury-furniture.jpg') no-repeat center center/cover;
+      color: white;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      color: #e99c2e;
+    }
+    .section p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #333333;
+    }
+    .section ul {
+      margin: 20px 0;
+      padding: 0;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .section ul li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+    .cta {
+      text-align: center;
+      padding: 20px;
+    }
+    .cta a {
+      text-decoration: none;
+      padding: 12px 30px;
+      background: #e99c2e;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+  </style>
 
 <body>
 
@@ -795,72 +755,38 @@
     </div>
 
   </header>
+  <div class="section-header imag-section">
+    <h2 class="ward">About Us</h2>
+</div>
 
-  <div class="container">
-    <div class="blog-card">
-      <div class="blog-content1">
-        <div class="blog-meta">
-          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
-          <span><i class="fas fa-comments"></i> 3 comments</span>
-        </div>
-        <h2 class="blog-title">Elegant Sofas: The Perfect Blend of Style and Comfort</h2>
-        <p class="blog-author">
-          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
-        </p>
-        <p class="blog-description">
-          Discover our premium sofa collection, designed to bring comfort and class to your living space.
-          With customizable fabrics and colors, Allmira’s sofas fit seamlessly into both modern and classic interiors.
-        </p>
-        <a href="/contact.html#contact"><button class="btn-read">Contact</button></a>
-      </div>
-      <div class="blog-image">
-        <img src="./assets/sofa/sofa-1.jpeg" alt="Blog Image">
-      </div>
-    </div>
+  <div class="section">
+    <h2>Who We Are</h2>
+    <p>
+      **Al Sharqia** is not just a furniture brand; it is a symbol of timeless elegance, exceptional craftsmanship, and innovative design. We are here to transform your living spaces into a blend of beauty and functionality. From the initial design concept to the final piece, every step is infused with passion and precision.
+    </p>
+    <p>
+      Our journey began with a vision: to create luxury furniture that speaks to the heart of every home. Today, **Al Sharqia** has evolved into a leader in the furniture industry, serving clients from all walks of life and creating stunning interiors that bring people closer to their dream spaces.
+    </p>
+  </div>
 
-    <div class="blog-card">
-      <div class="blog-content1 new-card">
-        <div class="blog-meta">
-          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
-          <span><i class="fas fa-comments"></i> 0 comments</span>
-        </div>
-        <h2 class="blog-title">Luxury Beds: Redefine Comfort & Elegance</h2>
-        <p class="blog-author">
-          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
-        </p>
-        <p class="blog-description">
-          Experience unparalleled comfort with Allmira's premium beds crafted from solid Sheesham wood.
-          Perfectly designed to blend elegance and durability, our collection offers bespoke styles
-          that cater to modern and traditional aesthetics alike.
-        </p>
-        <a href="/contact.html#contact"><button class="btn-read">Contact</button></a>
-      </div>
-      <div class="blog-image">
-        <img src="./assets/bedroom/bedroom-16.jpeg" alt="Blog Image">
-      </div>
-    </div>
+  <div class="section">
+    <h2>Our Vision</h2>
+    <p>
+      Our vision at **Al Sharqia** is to set the benchmark for luxury, innovation, and sustainability in the furniture industry. We aspire to create pieces that not only elevate your home but also tell a unique story of craftsmanship, style, and legacy.
+    </p>
+  </div>
 
-    <div class="blog-card">
-      <div class="blog-content1">
-        <div class="blog-meta">
-          <span><i class="fas fa-calendar-alt"></i> Nov 19, 2024</span>
-          <span><i class="fas fa-comments"></i> 3 comments</span>
-        </div>
-        <h2 class="blog-title">How to Choose the right Color Palette <br /> for Home</h2>
-        <p class="blog-author">
-          Post by <strong>Jane Doe</strong> in <a href="#">How to Choose</a>
-        </p>
-        <p class="blog-description">
-          Discover how Allmira's carefully crafted Sheesham wood pieces can redefine the
-          aesthetics of your living space. Whether it’s a sleek dining table or a custom wardrobe,
-          we bring innovation, elegance, and durability to every design.
-        </p>
-        <a href="/contact.html#contact"><button class="btn-read">Contact</button></a>
-      </div>
-      <div class="blog-image">
-        <img src="./assets/wardrop/wardrop-24.jpeg" alt="Blog Image">
-      </div>
-    </div>
+  <div class="section">
+    <h2>Why Choose Al Sharqia?</h2>
+    <p>
+      We believe in offering more than just furniture; we offer a piece of art that complements your lifestyle. Here's why **Al Sharqia** stands out:
+    </p>
+    <ul>
+      <li>**Exquisite Designs:** From classic to contemporary, our designs are tailored to suit every aesthetic.</li>
+      <li>**Sustainability at Heart:** We use sustainable materials that are eco-friendly and durable.</li>
+      <li>**Craftsmanship:** Each piece is handcrafted by skilled artisans, ensuring the highest quality.</li>
+      <li>**Custom Creations:** We understand that every home is unique, which is why we offer customizable solutions.</li>
+    </ul>
   </div>
 
   <!--newsletter strat -->
