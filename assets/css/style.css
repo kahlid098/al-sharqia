@@ -173,7 +173,7 @@ nav.navbar.bootsnav {
 
 .logo-image {
     width: 150px;
-    filter: drop-shadow(4px 3px 3px #ccc)   !important;
+    filter: drop-shadow(1px 0px 0px #ccc) !important;
 }
 
 .input-feild {
